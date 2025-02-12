@@ -1,0 +1,236 @@
+:root {
+  --vxe-font-family: -apple-system, arial, blinkmacsystemfont, segoe ui, pingfang sc,
+    hiragino sans gb, microsoft yahei, helvetica neue, helvetica, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --vxe-font-size: var(--sjzy-font-size) !important;
+  --vxe-font-size-medium: var(--sjzy-font-size) !important;
+  --vxe-font-size-small: var(--sjzy-font-size) !important;
+  --vxe-font-size-mini: var(--sjzy-font-size) !important;
+  --vxe-border-radius: var(--sjzy-border-radius-base);
+  --vxe-icon-font-family: verdana, arial, tahoma;
+
+  /* color */
+  --vxe-primary-color: var(--el-color-primary);
+  --vxe-success-color: var(--el-color-success);
+  --vxe-info-color: var(--el-color-info);
+  --vxe-warning-color: var(--el-color-warning);
+  --vxe-danger-color: var(--el-color-error);
+  --vxe-disabled-color: #bfbfbf;
+  --vxe-primary-disabled-color: #c0c4cc;
+
+  /* input */
+  --vxe-input-border-color: var(--sjzy-input-border-color);
+  --vxe-input-background-color: var(--sjzy-bg);
+  --vxe-select-option-hover-background-color: var(--sjzy-hover-color);
+  --vxe-select-panel-background-color: var(--sjzy-bg);
+  --vxe-table-popup-border-color: var(--sjzy-table-border-color);
+
+  /* pager */
+  --vxe-pager-background-color: var(--sjzy-bg);
+
+  /* table */
+  --vxe-table-background-color-row-checked: var(--sjzy-table-checked-row-bg-color);
+  --vxe-table-background-color-row-hover: var(--sjzy-table-background-color-row-hover);
+  --vxe-table-font-color: $vxe-font-color;
+  --vxe-table-header-font-color: #8a9298;
+  --vxe-table-footer-font-color: $vxe-font-color;
+  --vxe-table-border-radius: $vxe-border-radius;
+  --vxe-table-border-width: 1px;
+  --vxe-table-border-color: var(--sjzy-table-border-color);
+  --vxe-table-resizable-line-color: #d9dddf;
+  --vxe-table-resizable-drag-line-color: var(--el-color-primary);
+  --vxe-table-header-background-color: var(--sjzy-table-header-bg-color);
+  --vxe-table-body-background-color: var(--sjzy-bg);
+  --vxe-table-footer-background-color: var(--sjzy-table-header-bg-color);
+  --vxe-table-tree-node-line-color: #909399;
+  --vxe-table-tree-node-line-style: dotted;
+  --vxe-table-header-font-weight: 600;
+  --vxe-table-row-height-default: 32px;
+  --vxe-table-row-height-medium: 48px;
+  --vxe-table-row-height-small: 40px;
+  --vxe-table-row-height-mini: 32px;
+  --vxe-table-row-line-height: 16px;
+  --vxe-table-row-hover-background-color: var(--vxe-table-background-color-row-hover);
+  --vxe-table-row-striped-background-color: var(--vxe-table-background-color-row-hover);
+  --vxe-table-row-hover-striped-background-color: var(--vxe-table-background-color-row-hover);
+  --vxe-table-row-radio-checked-background-color: var(--vxe-table-background-color-row-checked);
+  --vxe-table-row-hover-radio-checked-background-color: var(
+    --vxe-table-background-color-row-checked
+  );
+  --vxe-table-row-checkbox-checked-background-color: var(--vxe-table-background-color-row-checked);
+  --vxe-table-row-hover-checkbox-checked-background-color: var(
+    --vxe-table-background-color-row-checked
+  );
+  --vxe-table-row-current-background-color: var(--sjzy-table-checked-row-bg-color);
+  --vxe-table-row-hover-current-background-color: var(--sjzy-table-checked-row-bg-color);
+  --vxe-table-column-padding-default: 13px 0;
+  --vxe-table-column-padding-medium: 16px 0;
+  --vxe-table-column-padding-small: 0;
+  --vxe-table-column-padding-mini: 8px 0;
+  --vxe-table-column-hover-background-color: #07090a;
+  --vxe-table-column-current-background-color: var(--sjzy-table-checked-row-bg-color);
+  --vxe-table-column-icon-border-color: #c0c4cc;
+  --vxe-table-column-icon-border-hover-color: #515a6e;
+  --vxe-table-cell-placeholder-color: #c0c4cc;
+  --vxe-table-cell-padding-left: 12px;
+  --vxe-table-cell-padding-right: 12px;
+  --vxe-table-cell-input-height-default: var(--vxe-table-row-height-default) - 6;
+  --vxe-table-cell-input-height-medium: var(--vxe-table-row-height-medium) - 6;
+  --vxe-table-cell-input-height-small: var(--vxe-table-row-height-small) - 6;
+  --vxe-table-cell-input-height-mini: var(--vxe-table-row-height-mini) - 6;
+  --vxe-table-cell-dirty-width: 5px;
+  --vxe-table-cell-dirty-update-color: #f56c6c;
+  --vxe-table-cell-dirty-insert-color: #19a15f;
+  --vxe-table-cell-area-border-color: var(--vxe-primary-color);
+  --vxe-table-cell-area-border-width: 1px;
+  --vxe-table-cell-main-area-extension-border-color: #fff;
+  --vxe-table-cell-main-area-extension-background-color: var(--vxe-primary-color);
+  --vxe-table-cell-extend-area-border-width: 2px;
+  --vxe-table-cell-copy-area-border-width: 3px;
+  --vxe-table-cell-active-area-border-width: 2px;
+  --vxe-table-cell-copy-area-border-color: var(--vxe-table-cell-area-border-color);
+  --vxe-table-cell-extend-area-border-color: var(--vxe-table-cell-area-border-color);
+  --vxe-table-cell-active-area-border-color: var(--vxe-table-cell-area-border-color);
+  --vxe-table-cell-area-background-color: rgb(64 158 255 / 0.2);
+  --vxe-table-checkbox-range-border-width: 1px;
+  --vxe-table-checkbox-range-border-color: #006af1;
+  --vxe-table-checkbox-range-background-color: rgb(50 128 252 / 0.2);
+  --vxe-table-fixed-left-scrolling-box-shadow: 4px 3px 4px 0 rgb(0 0 0 / 0.12);
+  --vxe-table-fixed-right-scrolling-box-shadow: -4px 3px 4px 0 rgb(0 0 0 / 0.12);
+}
+
+.vxe-table--render-default .vxe-body--column.col--dirty::before {
+  border-width: 5px;
+}
+
+.vxe-table--tooltip-wrapper {
+  z-index: 9999 !important;
+  max-width: 1200px;
+  line-height: 20px;
+}
+
+.vxe-toolbar.is--perfect {
+  background-color: #fff;
+}
+
+.vxe-pager {
+  height: 50px;
+}
+
+.vxe-cell--sort {
+  top: 2px;
+
+  [class*='vxe-sort-'] {
+    /* width: 14px !important;
+      height: 14px !important; */
+    margin-left: 4px;
+    font-size: 12px;
+  }
+}
+
+.vxe-table--render-default .vxe-table--fixed-right-wrapper.scrolling--middle {
+  box-shadow: -4px -1px 4px -3px rgb(0 0 0 / 0.12);
+}
+/* .vxe-table--render-default .vxe-table--fixed-right-wrapper.scrolling--middle {
+      .vxe-table--header-wrapper.fixed-right--wrapper{
+        box-shadow: inset 6px 0px 3px -3px rgb(0 0 0 / 0.12)
+      }
+      .vxe-table--body-wrapper.fixed-right--wrapper{
+        .vxe-table--body{
+          box-shadow: inset 6px 0px 3px -3px rgb(0 0 0 / 0.12)
+        }
+      }
+    } */
+
+.vxe-table--render-default .vxe-table--fixed-left-wrapper.scrolling--middle {
+  box-shadow: 4px 0 10px -5px rgb(0 0 0 / 0.12);
+}
+/* .vxe-table--render-default .vxe-table--fixed-left-wrapper.scrolling--middle {
+        .vxe-table--header-wrapper.fixed-left--wrapper{
+          box-shadow: inset -6px 0px 3px -3px rgb(0 0 0 / 0.12)
+        }
+        .vxe-table--body-wrapper.fixed-left--wrapper{
+          .vxe-table--body{
+            box-shadow: inset -6px 0px 3px -3px rgb(0 0 0 / 0.12)
+          }
+        }
+      } */
+
+.vxe-checkbox--icon::before {
+  font-weight: 500;
+}
+
+.col--valid-error {
+  border: 1px solid rgb(248, 113, 113);
+}
+
+.vxe-cell--valid-error-msg {
+  color: #fff !important;
+  background: #000 !important;
+  border-color: #000 !important;
+}
+
+.vxe-table--fixed-right-wrapper {
+  .col--last {
+    /* background-image: linear-gradient(transparent, transparent), linear-gradient(#e2eaee, #e2eaee) !important; */
+  }
+}
+
+.border--full {
+  .col--last {
+    background-size:
+      0 100%,
+      100% 1px !important;
+  }
+
+  .fixed-left--wrapper {
+    .col--last {
+      background-size:
+        1px 100%,
+        100% 1px !important;
+    }
+  }
+}
+
+/* TODO 不知道何时有用，暂留 1个月后删除 */
+/* .vxe-header--row {
+  .col--last.col--fixed {
+    background-size:
+      1px 100%,
+      100% 1px !important;
+  }
+} */
+
+.vxe-table--render-default .vxe-table--border-line {
+  z-index: 9;
+}
+
+.is--disabled.vxe-cell--checkbox {
+  .vxe-icon-checkbox-unchecked {
+    color: var(--vxe-disabled-color) !important;
+  }
+}
+
+.disabled-row {
+  background-color: var(--sjzy-table-checked-row-bg-color);
+}
+
+.disabled-row.row--hover {
+  background-color: var(--sjzy-table-checked-row-bg-color) !important;
+}
+
+.disabled-row.row--current {
+  background-color: var(--sjzy-table-checked-row-bg-color) !important;
+}
+
+.vxe-table--render-default.old-cell-valid
+  .vxe-body--column.col--valid-error
+  .vxe-cell--valid-error-hint {
+  top: 50% !important;
+  bottom: 50% !important;
+  width: 100% !important;
+}
+
+.vxe-table--render-default .vxe-body--column.col--dirty::before {
+  border-color: transparent #ff8225 transparent transparent;
+}

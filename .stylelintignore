@@ -1,0 +1,10 @@
+/dist/*
+/public/*
+public/*
+/src/plugins/vxeTable/**/*
+demo.css
+iconfont.css
+iconfont/*
+/iconfont/*
+iconfont
+prism.scss

@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+npx --no -- commitlint --edit ${1}
+commit_msg=`cat $1`
+branch=`git rev-parse --abbrev-ref HEAD`
+if [ $branch != "develop" ] && [ $branch != "test" ] && [ $branch != "uat" ] && [ $branch != "master" ];
+then
+    commit_msg=`echo $commit_msg | sed "s#\\:#($branch):#"`
+fi
+echo "$commit_msg" > $1

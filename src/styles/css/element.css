@@ -1,0 +1,41 @@
+:root {
+  --el-font-size-base: var(--sjzy-font-size) !important;
+
+  --el-color-error: var(--sjzy-color-error) !important;
+  --el-menu-item-height: var(--sjzy-menu-height) !important;
+  --el-menu-sub-item-height: var(--sjzy-menu-height) !important;
+  --el-menu-item-font-size: var(--sjzy-font-size) !important;
+  --el-menu-text-color: var(--sjzy-menu-color) !important;
+  --el-menu-horizontal-height: var(--sjzy-nav-height) !important;
+  --el-component-size: var(--sjzy-component-size) !important;
+  --el-border-radius-base: var(--sjzy-border-radius-base) !important;
+  --el-font-size-small: var(--sjzy-font-size) !important;
+  --el-font-size-default: var(--sjzy-font-size) !important;
+  --el-font-size-big: 16px;
+  --el-font-size-bigger: 18px;
+  --el-font-size-max: 22px;
+  --font-size: var(--sjzy-font-size) !important;
+  --el-form-label-font-size: var(--sjzy-font-size) !important;
+  --el-font-weight-primary: var(--sjzy-font-weight-primary) !important;
+
+  --el-color-primary: var(--sjzy-color-primary) !important;
+  --el-color-primary-light-3: var(--sjzy-color-primary-30) !important;
+  --el-color-primary-light-5: var(--sjzy-color-primary-50) !important;
+  --el-color-primary-light-7: var(--sjzy-color-primary-70) !important;
+  --el-color-primary-light-8: var(--sjzy-color-primary-80) !important;
+  --el-color-primary-light-9: var(--sjzy-color-primary-90) !important;
+
+  --el-color-warning: var(--sjzy-color-warning) !important;
+  --el-color-warning-light-3: var(--sjzy-color-warning-30) !important;
+  --el-color-warning-light-5: var(--sjzy-color-warning-50) !important;
+  --el-color-warning-light-7: var(--sjzy-color-warning-70) !important;
+  --el-color-warning-light-8: var(--sjzy-color-warning-80) !important;
+  --el-color-warning-light-9: var(--sjzy-color-warning-90) !important;
+
+  --el-color-danger: var(--sjzy-color-error) !important;
+  --el-color-danger-light-3: var(--sjzy-color-error-30) !important;
+  --el-color-danger-light-5: var(--sjzy-color-error-50) !important;
+  --el-color-danger-light-7: var(--sjzy-color-error-70) !important;
+  --el-color-danger-light-8: var(--sjzy-color-error-80) !important;
+  --el-color-danger-light-9: var(--sjzy-color-error-90) !important;
+}

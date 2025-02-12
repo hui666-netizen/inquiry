@@ -1,0 +1,13 @@
+.sjzy-box {
+  padding: 10px;
+  background-color: var(--sjzy-bg);
+  border-radius: 3px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}

@@ -1,0 +1,258 @@
+/* 基础 */
+:root {
+  --sjzy-scheme: light;
+  /* 最小宽度 */
+  --sjzy-min-width: 1440px;
+  /* body背景色 */
+  --sjzy-body-bg: #edf0f2;
+  /* 基本块背景色 */
+  --sjzy-bg: #fff;
+  --sjzy-bg-ccc: #ccc;
+  /* 字体颜色 */
+  --sjzy-font-color: #1c1c1d;
+  --sjzy-font-color-2: #717e8a;
+  --sjzy-font-color-3: #d3d6d9;
+  --sjzy-font-color-4: #d3d6d9;
+  /* 主题白色 */
+  --sjzy-color-white: #fff;
+  /* 主题色 */
+  --sjzy-color-primary: #1684fc;
+  /* 主题色透明度 80, 60, 40, 20, 10, 5*/
+  --sjzy-color-primary-90: rgb(from var(--sjzy-color-primary) r g b / 0.1);
+  --sjzy-color-primary-80: rgb(from var(--sjzy-color-primary) r g b / 0.2);
+  --sjzy-color-primary-70: rgb(from var(--sjzy-color-primary) r g b / 0.3);
+  --sjzy-color-primary-60: rgb(from var(--sjzy-color-primary) r g b / 0.4);
+  --sjzy-color-primary-50: rgb(from var(--sjzy-color-primary) r g b / 0.5);
+  --sjzy-color-primary-40: rgb(from var(--sjzy-color-primary) r g b / 0.6);
+  --sjzy-color-primary-30: rgb(from var(--sjzy-color-primary) r g b / 0.7);
+  --sjzy-color-primary-20: rgb(from var(--sjzy-color-primary) r g b / 0.8);
+  --sjzy-color-primary-10: rgb(from var(--sjzy-color-primary) r g b / 0.9);
+  --sjzy-color-primary-5: rgb(from var(--sjzy-color-primary) r g b / 0.95);
+  /* 失败色 */
+  --sjzy-color-error: #e50113;
+  /* 主题色透明度 80, 60, 40, 20, 10, 5*/
+  --sjzy-color-error-90: rgb(from var(--sjzy-color-error) r g b / 0.1);
+  --sjzy-color-error-80: rgb(from var(--sjzy-color-error) r g b / 0.2);
+  --sjzy-color-error-70: rgb(from var(--sjzy-color-error) r g b / 0.3);
+  --sjzy-color-error-60: rgb(from var(--sjzy-color-error) r g b / 0.4);
+  --sjzy-color-error-50: rgb(from var(--sjzy-color-error) r g b / 0.5);
+  --sjzy-color-error-40: rgb(from var(--sjzy-color-error) r g b / 0.6);
+  --sjzy-color-error-30: rgb(from var(--sjzy-color-error) r g b / 0.7);
+  --sjzy-color-error-20: rgb(from var(--sjzy-color-error) r g b / 0.8);
+  --sjzy-color-error-10: rgb(from var(--sjzy-color-error) r g b / 0.9);
+  --sjzy-color-error-5: rgb(from var(--sjzy-color-error) r g b / 0.95);
+  /* 成功色 */
+  --sjzy-color-success: #3b9f08;
+  /* 主题色透明度 80, 60, 40, 20, 10, 5*/
+  --sjzy-color-success-90: rgb(from var(--sjzy-color-success) r g b / 0.1);
+  --sjzy-color-success-80: rgb(from var(--sjzy-color-success) r g b / 0.2);
+  --sjzy-color-success-70: rgb(from var(--sjzy-color-success) r g b / 0.3);
+  --sjzy-color-success-60: rgb(from var(--sjzy-color-success) r g b / 0.4);
+  --sjzy-color-success-50: rgb(from var(--sjzy-color-success) r g b / 0.5);
+  --sjzy-color-success-40: rgb(from var(--sjzy-color-success) r g b / 0.6);
+  --sjzy-color-success-30: rgb(from var(--sjzy-color-success) r g b / 0.7);
+  --sjzy-color-success-20: rgb(from var(--sjzy-color-success) r g b / 0.8);
+  --sjzy-color-success-10: rgb(from var(--sjzy-color-success) r g b / 0.9);
+  --sjzy-color-success-5: rgb(from var(--sjzy-color-success) r g b / 0.95);
+  /* 警告色 */
+  --sjzy-color-warning: #ff8225;
+  /* 主题色透明度 80, 60, 40, 20, 10, 5*/
+  --sjzy-color-warning-90: rgb(from var(--sjzy-color-warning) r g b / 0.1);
+  --sjzy-color-warning-80: rgb(from var(--sjzy-color-warning) r g b / 0.2);
+  --sjzy-color-warning-70: rgb(from var(--sjzy-color-warning) r g b / 0.3);
+  --sjzy-color-warning-60: rgb(from var(--sjzy-color-warning) r g b / 0.4);
+  --sjzy-color-warning-50: rgb(from var(--sjzy-color-warning) r g b / 0.5);
+  --sjzy-color-warning-40: rgb(from var(--sjzy-color-warning) r g b / 0.6);
+  --sjzy-color-warning-30: rgb(from var(--sjzy-color-warning) r g b / 0.7);
+  --sjzy-color-warning-20: rgb(from var(--sjzy-color-warning) r g b / 0.8);
+  --sjzy-color-warning-10: rgb(from var(--sjzy-color-warning) r g b / 0.9);
+  --sjzy-color-warning-5: rgb(from var(--sjzy-color-warning) r g b / 0.95);
+  /* 辅助色 */
+  /* 青色 */
+  --sjzy-color-cyan: #15c3e2;
+  /* 浅绿色 */
+  --sjzy-color-aqua: #27c583;
+  /* 土黄色 */
+  --sjzy-color-earthy-yellow: #ba885a;
+  /* 粉色 */
+  --sjzy-color-pink: #ec82aa;
+  /* 紫色 */
+  --sjzy-color-purple: #858cf8;
+  /* 蓝色 */
+  --sjzy-color-blue: #1684fc;
+  /* 红色 */
+  --sjzy-color-red: #e50113;
+  /* 绿色 */
+  --sjzy-color-green: #3b9f08;
+  /* 黄色 */
+  --sjzy-color-yellow: #ff8225;
+  /* 灰色 */
+  --sjzy-color-gray: #b8babc;
+  /* 浅青色 */
+  --sjzy-color-light-cyan: #29b8c8;
+  /* 浅黄色 */
+  --sjzy-color-light-yellow:  #f0c000;
+  /* 砖红色 */
+  --sjzy-color-brick-red:  #ec4646;
+  /* 深灰 */
+  --sjzy-color-dark-gray:  #4d4e4e;
+
+  /* 辅助背景色 */
+  --sjzy-bg-color-red:  rgb(from var(--sjzy-color-red) r g b / 0.1);
+  --sjzy-bg-color-blue:  rgb(from var(--sjzy-color-blue) r g b / 0.1);
+  --sjzy-bg-color-green:  rgb(from var(--sjzy-color-green) r g b / 0.1);
+  --sjzy-bg-color-light-cyan:  rgb(from var(--sjzy-color-light-cyan) r g b / 0.1);
+  --sjzy-bg-color-aqua:  rgb(from var(--sjzy-color-aqua) r g b / 0.1);
+  --sjzy-bg-color-light-yellow:  rgb(from var(--sjzy-color-light-yellow) r g b / 0.1);
+  --sjzy-bg-color-yellow:  rgb(from var(--sjzy-color-yellow) r g b / 0.1);
+  --sjzy-bg-color-earthy-yellow:  rgb(from var(--sjzy-color-earthy-yellow) r g b / 0.1);
+  --sjzy-bg-color-brick-red:  rgb(from var(--sjzy-color-brick-red) r g b / 0.1);
+  --sjzy-bg-color-purple:  rgb(from var(--sjzy-color-purple) r g b / 0.1);
+  --sjzy-bg-color-dark-gray:  rgb(from var(--sjzy-color-dark-gray) r g b / 0.1);
+
+  /* 字体色 */
+  /* 一级文字 */
+  --sjzy-color-text-1: #1c1c1d;
+  /* 二级文字 */
+  --sjzy-color-text-2: #717e8a;
+  /* 提示文字 */
+  --sjzy-color-text-prompt: #b8babc;
+  /* 暗提示 */
+  --sjzy-color-text-darkPrompt: #d3d6d9;
+
+  /* 字体大小 */
+  /* 标准 */
+  --sjzy-font-size: 12px;
+  /* 字重 */
+  --sjzy-font-weight-primary: 400;
+
+  /* 线条 */
+  /* 表格边框/分割线 */
+  --sjzy-table-border-color: rgba(0, 44, 93, 0.08);
+  /* 输入框边框色 */
+  --sjzy-input-border-color: #d4d7d9;
+
+  /* 纵向布局左侧宽度  英文版260px*/
+  --sjzy-left-menu-width: 220px;
+  /* 分栏布局 纵向缩小收起后宽度*/
+  --sjzy-column-collapse-width: 60px;
+  /* 菜单背景色 */
+  --sjzy-menu-background: #263944;
+  /* 菜单subItem背景色 */
+  --sjzy-menu-sub-background: #1f2d35;
+  /* 分栏布局 二级分栏颜色*/
+  --sjzy-menu-column-background: #fafdff;
+  /* 菜单背景下方版本和收起加logo背景色 */
+  --sjzy-menu-background-additional: rgba(255, 255, 255, 0.05);
+  /* 菜单hover 背景色 */
+  --sjzy-menu-background-hover: rgba(255, 255, 255, 0.2);
+  /* 菜单hover 字体色 */
+  --sjzy-menu-color-hover: #ffffff;
+  /* 菜单item高度 */
+  --sjzy-menu-height: 40px;
+  /* 菜单字体色 */
+  --sjzy-menu-color: rgba(255, 255, 255, 0.7);
+  /* 菜单搜素背景色 */
+  --sjzy-menu-search-bg: rgba(255, 255, 255, 0.1);
+  /** 菜单选中标记色 */
+  --sjzy-menu-active-block-bg: var(--el-color-primary);
+
+  /* 上方Nav高度 */
+  --sjzy-nav-height: 44px;
+  /* 上方tabs高度 */
+  --sjzy-tabs-height: 34px;
+  /* 上方tabs-smooth 背景色 */
+  --sjzy-tabs-smooth: #edf6ff;
+  /* 上方tabs-smooth-hover背景色 */
+  --sjzy-tabs-smooth-hover: #dee1e6;
+  /* 上方tabs-smart 背景色 */
+  --sjzy-tabs-smart: #f7f9fc;
+  /* 上方tabs-smart-hover背景色 */
+  --sjzy-tabs-smart-hover: #ecf5ff;
+  /* 布局过渡动画 */
+  --sjzy-layout-transition: all 0.3s;
+  /* 内容区域padding */
+  --sjzy-container-padding: 12px;
+  /* body间距 */
+  --sjzy-body-margin: 12px;
+  /* 基础圆角 */
+  --sjzy-border-radius-base: 2px;
+  /* body圆角 */
+  --sjzy-body-radius: var(--sjzy-border-radius-base);
+
+  /* 基础间距 */
+  --sjzy-base-padding: 12px;
+  /* 基础间距 */
+  --sjzy-base-border-color: #e2eaee;
+  /* 基础阴影 */
+  --sjzy-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  --sjzy-color-disabled: #fff;
+  --sjzy-background-color-disabled: #b8babc;
+  --fe-border-color-disabled: #e4e7ed;
+  /* element 组件高度 */
+  --sjzy-component-size: 28px;
+  /* hover */
+  --sjzy-hover-color: rgba(242, 246, 250, 0.6);
+  /* 行选中背景色 */
+  --sjzy-table-checked-row-bg-color: var(--sjzy-color-primary-90);
+  /* 表头背景色 */
+  --sjzy-table-header-bg-color: #f7f8fa;
+  /* 行hover背景色 */
+  --sjzy-table-background-color-row-hover: var(--sjzy-hover-color);
+  /* 行选中hover */
+  --sjzy-table-checked-row-hover-bg-color: #d5dfea;
+
+  /* 表单 */
+  --sjzy-form-input-border-color: #d2d9dd;
+
+  /* 块 */
+  --sjzy-part-bg-color: #F4F5F7;
+  --sjzy-part-hover-color: rgba(22, 132, 252, 0.05);
+  --sjzy-part-table-hover-color: #f6f8f8;
+}
+
+/* 浅色菜单模式 */
+html.theme-menu-light {
+  /* 菜单背景色 */
+  --sjzy-menu-background: #ffffff;
+  /* 菜单subItem背景色 */
+  --sjzy-menu-sub-background: #ffffff;
+  /* 分栏布局 二级分栏颜色*/
+  --sjzy-menu-column-background: #ffffff;
+  /* 菜单hover 背景色 */
+  --sjzy-menu-background-hover: #e8f2fe;
+  /* 菜单hover 字体色 */
+  --sjzy-menu-color-hover: var(--sjzy-color-primary);
+  /* 菜单item高度 */
+  --sjzy-menu-height: 40px;
+  /* 菜单字体色 */
+  --sjzy-menu-color: var(--sjzy-font-color);
+  /* 菜单搜素背景色 */
+  --sjzy-menu-search-bg: #f2f5f8;
+  /** 菜单选中标记色 */
+  --sjzy-menu-active-block-bg: #e8f2fe;
+}
+
+/* 暗黑模式 */
+html.dark {
+  --sjzy-scheme: dark;
+  --sjzy-bg: #181818;
+  --sjzy-body-bg: #000;
+  --sjzy-menu-background: var(--sjzy-bg);
+  --sjzy-menu-background-hover: #4b4949;
+  --sjzy-menu-sub-background: #302f2f;
+  --sjzy-tabs-smooth: #494a4b;
+  --sjzy-menu-column-background: var(--sjzy-bg);
+  --sjzy-menu-background-additional: var(--sjzy-bg);
+  --sjzy-tabs-smart: #2c2c2c;
+  --sjzy-tabs-smart-hover: #535353;
+  --sjzy-table-background-color-row-hover: #696b6b;
+  --sjzy-table-border-color: rgba(199, 200, 202, 0.137);
+  --sjzy-form-input-border-color: rgba(199, 200, 202, 0.445);
+  --sjzy-menu-search-bg: rgba(255, 255, 255, 0.1);
+  --sjzy-table-header-bg-color: #28282a;
+  --sjzy-font-color: rgba(255, 255, 255, 0.7);
+  --sjzy-menu-color-hover: #ffffff;
+  --sjzy-menu-active-block-bg: var(--sjzy-menu-background-hover);
+  --sjzy-part-bg-color: #494a4b;
+}

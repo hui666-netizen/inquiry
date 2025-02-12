@@ -1,0 +1,5 @@
+declare module 'count-vue3'
+declare module 'mockjs'
+declare module 'quill-vue3'
+declare module 'vab-player'
+declare module 'vue-json-viewer'

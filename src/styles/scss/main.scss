@@ -1,0 +1,131 @@
+// @import './fast';
+@import './microapp';
+@import './scrollbar';
+@import './element';
+@import './sjzyTableProForm';
+@import './fast';
+
+// @import './prism';
+@import './custom';
+
+html,
+body,
+#micro-devops-app {
+  height: 100%;
+  font-size: var(--sjzy-font-size);
+  color: var(--sjzy-font-color);
+}
+
+div,
+body,
+html {
+  @include scrollbar;
+}
+
+body {
+  background-color: var(--sjzy-body-bg);
+}
+
+#micro-devops-app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* sjzy-dot圆点动画 */
+.sjzy-dot {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 3px;
+  vertical-align: middle;
+  border-radius: 50%;
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: sjzy-dots 1.2s ease-in-out infinite;
+
+    @keyframes sjzy-dots {
+      0% {
+        opacity: 0.6;
+        transform: scale(0.8);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(2.4);
+      }
+    }
+  }
+
+  &-success {
+    background: var(--el-color-success);
+
+    span {
+      background: var(--el-color-success);
+    }
+  }
+
+  &-error {
+    background: var(--el-color-error);
+
+    span {
+      background: var(--el-color-error);
+    }
+  }
+}
+
+/* sjzy-data-empty占位图 */
+.sjzy-data-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  margin: auto;
+}
+
+/* nprogress进度条 */
+#nprogress {
+  position: fixed;
+  z-index: 9999;
+
+  .bar {
+    background: var(--el-color-primary);
+  }
+
+  .peg {
+    box-shadow:
+      0 0 10px var(--el-color-primary),
+      0 0 5px var(--el-color-primary);
+  }
+}
+
+// 副文本编辑器层级
+.tox-tinymce-aux {
+  z-index: 999999 !important;
+}
+
+// 底部边框
+.sjzy-border-bottom {
+  border-bottom: 1px solid #ebeff2;
+}
+
+.sjzy-part-box {
+  background-color: var(--sjzy-part-bg-color);
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: var(--sjzy-part-hover-color);
+    border-color: var(--el-color-primary);
+  }
+}

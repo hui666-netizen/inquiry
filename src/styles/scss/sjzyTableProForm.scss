@@ -1,0 +1,194 @@
+@mixin table-form {
+  .el-radio-button__inner {
+    height: 28px !important;
+    padding: 0 15px;
+    line-height: 28px !important;
+  }
+
+  .el-form-item--default,
+  .el-form-item {
+    align-items: center;
+    height: 28px !important;
+    margin-bottom: 10px;
+    line-height: 28px !important;
+  }
+
+  .el-col {
+    min-height: 26px;
+  }
+
+  .el-form-item.is-error .el-select .el-input.is-focus .el-input__wrapper {
+    box-shadow: none !important;
+  }
+
+  .el-select .el-input.is-focus .el-input__wrapper {
+    box-shadow: none !important;
+  }
+
+  .el-select .el-input__wrapper.is-focus {
+    box-shadow: none !important;
+  }
+
+  // 搜索新样式
+  .el-input__wrapper {
+    padding-left: 0 !important;
+    box-shadow: none !important;
+
+    &:hover {
+      box-shadow: none !important;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .el-input-group__append {
+    line-height: 26px;
+    box-shadow: none !important;
+  }
+
+  .el-select .el-select-tags-wrapper.has-prefix {
+    margin-left: 0 !important;
+  }
+
+  .el-select__input {
+    margin-left: 0 !important;
+  }
+
+  .el-form-item {
+    padding-left: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+
+    &:not(.notNewStyle) {
+      border: 1px solid var(--sjzy-form-input-border-color);
+
+      .el-select,
+      .el-input__wrapper,
+      .el-form-item .el-form-item__label,
+      .el-input__inner,
+      .el-date-editor,
+      .el-select__input,
+      .el-radio {
+        height: 26px !important;
+        line-height: 26px !important;
+        background-color: transparent !important;
+      }
+
+      .el-form-item__label {
+        height: 26px !important;
+        line-height: 26px !important;
+      }
+
+      .el-form-item__content {
+        height: 26px !important;
+        min-height: 26px !important;
+        line-height: 26px !important;
+      }
+
+      .el-select {
+        .el-select__wrapper {
+          min-height: 26px !important;
+          padding: 4px 12px 4px 0 !important;
+          background-color: transparent !important;
+          box-shadow: none !important;
+
+          .el-select__input {
+            height: 18px !important;
+          }
+
+          .el-tag {
+            height: 18px !important;
+          }
+        }
+      }
+
+      .el-checkbox {
+        height: 26px !important;
+        min-height: 26px !important;
+        line-height: 26px !important;
+      }
+
+      &:hover {
+        border-color: var(--el-color-primary);
+      }
+
+      &:has(.el-input.is-focus) {
+        border-color: var(--el-color-primary);
+      }
+
+      &:has(.el-input__wrapper.is-focus) {
+        border-color: var(--el-color-primary);
+      }
+
+      &:has(.el-range-editor.is-active) {
+        border-color: var(--el-color-primary);
+      }
+
+      &:has(.is-disabled) {
+        cursor: not-allowed;
+        background-color: var(--el-disabled-bg-color);
+
+        label {
+          cursor: not-allowed;
+        }
+      }
+
+      &:has(.el-form-item__error) {
+        border-color: var(--el-color-error);
+      }
+
+      .el-form-item__error {
+        display: none !important;
+      }
+    }
+
+    &.is-error {
+      border: 1px solid var(--el-color-error) !important;
+
+      &:has(.el-form-item__error) {
+        border: 1px solid var(--el-color-error) !important;
+      }
+
+      .el-form-item__error {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.sjzy-table-pro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .table-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .body-center {
+      flex: auto;
+    }
+  }
+
+  .icon-table-btn {
+    height: 28px;
+    border-color: #d2d9dd;
+
+    @apply p-6px flex items-center border-1  border-solid hover:border-$el-color-primary hover:z-99 cursor-pointer;
+  }
+
+  &-form,
+  &-fe-form {
+    @include table-form;
+  }
+}
+
+.sjzy-table-v2-form {
+  @include table-form;
+
+  --sjzy-table-form-bg-color: var(--sjzy-bg);
+}

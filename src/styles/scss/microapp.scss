@@ -1,0 +1,61 @@
+micro-app[name='microAppFmc'] {
+  .el-overlay-dialog {
+    .is-align-center {
+      margin: auto !important;
+    }
+  }
+
+  .vxe-table .vxe-sort--asc-btn,
+  .vxe-table .vxe-sort--desc-btn {
+    height: 0.8em !important;
+  }
+
+  * {
+    font-family: -apple-system, 'blinkmacsystemfont', 'segoe ui', 'pingfang sc', 'hiragino sans gb',
+      'microsoft yahei', 'helvetica neue', 'helvetica', 'arial', sans-serif, 'apple color emoji',
+      'segoe ui emoji', 'segoe ui symbol' !important;
+  }
+}
+
+micro-app[name='microAppCrm'],
+micro-app[name='microAppFmc'],
+micro-app[name='microAppMid'] {
+  // 解决嵌入子系统的tooltip计算问题，会多出左侧菜单和顶部的距离，改为fixed定位
+  .vxe-table--tooltip-wrapper {
+    position: fixed !important;
+  }
+
+  .error-container {
+    min-height: 100%;
+  }
+}
+
+#micro-crm-app,
+#micro-mid-app,
+#micro-fmc-app {
+  height: 100% !important;
+
+  .sjzy-wrapper {
+    min-width: 100% !important;
+  }
+
+  .sjzy-app-main {
+    height: 100%;
+    padding: 0 !important;
+  }
+
+  .el-button {
+    min-width: auto;
+  }
+}
+
+#micro-fmc-app {
+  a {
+    // color: var(--el-color-primary);
+    text-decoration: none;
+  }
+
+  .sjzy-modal-wrapper {
+    padding: 0;
+  }
+}

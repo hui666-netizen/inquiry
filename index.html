@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="webkit" name="renderer" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <meta content="DevOPS" name="keywords" />
+    <script
+      type="text/javascript"
+      src="https://lf1-cdn-tos.bytegoofy.com/goofy/lark/op/h5-js-sdk-1.5.16.js"
+    ></script>
+    <%- echartsscript %> <%- g6script %>
+  </head>
+
+  <body>
+    <div id="micro-devops-app">
+      <div class="first-loading-wrp">
+        <div class="loading-wrp">
+          <span class="dot dot-spin">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://lf1-cdn-tos.bytegoofy.com/goofy/locl/lark/external_js_sdk/h5-js-sdk-1.1.7.js"></script>
+  </body>
+</html>
