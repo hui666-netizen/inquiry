@@ -47,14 +47,6 @@ function padZero(num: any) {
         <Component :is="Component" />
       </KeepAlive>
     </RouterView>
-    <!-- 飞书dom -->
-    <!-- <div
-      id="feishu-user-point"
-      v-clickOutside="closeFeishuUser"
-      :style="{ left: `${fsComponentLeft}px`, top: `${fsComponentTop}px` }"
-      class="fixed left-0 top-0 z-9999999"
-      style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08)"
-    /> -->
   </ElConfigProvider>
 </template>
 
