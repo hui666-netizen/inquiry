@@ -14,6 +14,8 @@ declare module 'vue' {
     CustomEdge: typeof import('./components/WorkFlow/components/CustomEdge.vue')['default']
     DatePicker: typeof import('./components/SjzyTimeSelect/components/datePicker.vue')['default']
     DaterangeDate: typeof import('./components/SjzyTimeSelect/components/daterangeDate.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     FieldAddModal: typeof import('./components/SystemCom/field/FieldAddModal.vue')['default']
     FieldForm: typeof import('./components/SystemCom/field/FieldForm.vue')['default']
     FieldManagement: typeof import('./components/SystemCom/field/FieldManagement.vue')['default']
